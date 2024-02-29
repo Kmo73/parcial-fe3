@@ -1,9 +1,14 @@
 import React from 'react'
 import styles from '../styles/styles.module.css'
 
-const Card = () => {
+
+const Card = ({programador}) => {
+
   return (
-    <div>Hola, soy un tarjeta</div>
+    <div className={styles.card}>
+      <h4>¡Hola {programador.nombre}!</h4>
+      <h4>Sabemos que serás un excelente desarrollador de {programador.lenguaje}</h4>
+    </div>
   )
 }
 
